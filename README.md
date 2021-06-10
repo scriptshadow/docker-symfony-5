@@ -28,7 +28,7 @@ Je débute donc l’écriture du docker-compose.yml en spécifiant le numéro de
 version: "3.8"
 services:
 ```
-#Conteneur MySQL
+# Conteneur MySQL
 Il est temps désormais de spécifier nos “services” au sens docker-compose du terme. Commençons par le plus simple, la base de donnée MySQL.
 
 ```yml
@@ -54,7 +54,7 @@ Vous aurez noté l’utilisation de l’option **MYSQL_ROOT_PASSWORD: 'root'** e
 
 Pour que la configuration ci-dessus fonctionne, il faut ajouter à la fin du docker-compose.yml les références au “networks” et mettre en place un volume pour le stockage des fichiers de la base de données.
 
-#Conteneur phpMyAdmin
+# Conteneur phpMyAdmin
 Qui dit base de donnée MySQL dit phpMyAdmin non ? Au moins en environnement de développement.
 
 ```yml
